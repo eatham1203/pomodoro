@@ -9,11 +9,11 @@
 
 body {
     background-image: url("assets/Beginning.png");
-    background-size: cover;           /* Fully cover the screen */
-    background-repeat: no-repeat;     /* Prevent repeating */
-    background-attachment: fixed;     /* Keep it fixed when scrolling */
-    background-position: center;      /* Center the image nicely */
-    background-color: #1e213f;        /* Fallback background color */
+    background-size: cover;           
+    background-repeat: no-repeat;    
+    background-attachment: fixed;     
+    background-position: center;     
+    background-color: #1e213f;    
     color: #ffffff;
 }
 
@@ -61,7 +61,7 @@ h1 {
     border-radius: 50%;
     background: #151932;
     box-shadow: 20px 20px 42px #c0c5ec, -20px -10px 42px #b9bfdf;
-    overflow: hidden; /* Makes image inside not overflow the circle */
+    overflow: hidden; 
 }
 
 .pomodoro::before {
@@ -118,7 +118,6 @@ h1 {
     height: 100%;
 }
 
-/* When started, push it downward slightly */
 .timer-started .time {
     transform: translate(-50%, -20%);
 }
