@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div id="timer-message">Please select a wave before starting</div>
+
+    <div class="container">
+        <div class="timer">
+            <h1>🌱Zombie Wave🧟</h1>
+
+            <div class="button-container">
+                <button class="button" id="pomodoro-session">Wave🧟</button>
+                <button class="button" id="short-break">Short Break🌱</button>
+                <button class="button" id="long-break">Long Break🌻</button>
+            </div>
+
+            <main>
+                <div class="pomodoro">
+
+                    <div id="pomodoro-timer" class="timer-display" data-duration="25.00">
+                    <div class="image-wrapper pea-image hidden">
+                        <img src="assets/30Mins.png" alt="PeaHead">
+                    </div>
+                    <h1 class="time">25:00</h1>
+                    </div>
+
+                    <div id="short-timer" class="timer-display" data-duration="5.00">
+                    <div class="image-wrapper pea-image hidden">
+                        <img src="assets/short.png" alt="PeaHead">
+                    </div>
+                    <h1 class="time">5:00</h1>
+                    </div>
+
+                    <div id="long-timer" class="timer-display" data-duration="10.00">
+                    <div class="image-wrapper pea-image hidden">
+                        <img src="assets/long.png" alt="PeaHead">
+                    </div>
+                    <h1 class="time">10:00</h1>
+                    </div>
+
+                </div>
+            </main>
+
+            <div class="buttons">
+                <button id="start">START</button>
+                <button id="stop">STOP</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="renderer.js"></script>
+
+</body>
+
+</html>
